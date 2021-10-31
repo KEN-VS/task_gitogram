@@ -1,0 +1,52 @@
+@import "../../global.scss";
+.c-container {
+    width: 82%;
+    margin: 0 auto;
+    @include tablets {
+        width: 99%;
+    }
+}
+
+.feed__title {
+    display: flex;
+    margin-bottom: 16px;
+    @include phones {
+        margin-bottom: 10px;
+    }
+}
+
+.feed__cover {
+    border: 1px solid #F1F1F1;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 24px 20px;
+    min-height: 173px;
+    margin-bottom: 16px;
+    @include tablets {
+        padding: 24px 15px;
+    }
+    @include phones {
+        margin-bottom: 3px;
+    }
+}
+
+.feedtime {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: auto;
+    display: block;
+    @include phones {
+        display: none;
+    }
+}
+
+.comments {
+    margin-bottom: 10px;
+}
+
+.comments__item {
+    margin-bottom: 6px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

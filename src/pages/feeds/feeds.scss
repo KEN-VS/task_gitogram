@@ -1,0 +1,64 @@
+@import "../../global.scss";
+.headline__menu {
+    @include phones {
+        margin-right: 8px;
+    }
+}
+
+.headline__logo {
+    width: 100px;
+    height: 21px;
+}
+
+.stories {
+    display: flex;
+    justify-content: space-between;
+    @include tablets {}
+}
+
+.stories-item {
+    flex-shrink: 1;
+}
+
+.topline {
+    margin-bottom: 23px;
+    @include tablets {
+        margin-bottom: 31px;
+    }
+    @include phones {
+        margin-bottom: 23px;
+    }
+}
+
+.feeds__title {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.1;
+    @include phones {
+        font-size: 20px;
+    }
+}
+
+.feeds__content {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.6;
+    @include phones {
+        font-size: 12px;
+        margin-bottom: 17px;
+    }
+}
+
+.content-item {
+    margin-bottom: 24px;
+    @include tablets {
+        margin-bottom: 20px;
+    }
+    @include phones {
+        margin-bottom: 16px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

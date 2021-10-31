@@ -1,0 +1,39 @@
+@import "../../global.scss";
+.c-user-btn:hover>.avatar {
+    border-color: transparent;
+}
+
+.avatar {
+    width: 92px;
+    height: 92px;
+    border: 2px solid #A6328D;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 10px;
+    @include phones {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 8px;
+    }
+}
+
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.username {
+    color: #000;
+    font-size: 12px;
+}
