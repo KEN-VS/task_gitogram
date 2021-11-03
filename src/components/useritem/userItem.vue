@@ -1,7 +1,7 @@
 <template>
 <button class="c-user-btn">
   <div class="avatar">
-  <img :src="avatar" alt="avatar" class="avatar__img">
+  <img :src='require(`@/assets/${avatar}`)' alt="avatar" class="avatar__img">
   </div>
   <div class="username">{{username}}</div>
 </button>

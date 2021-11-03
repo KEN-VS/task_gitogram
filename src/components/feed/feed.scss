@@ -19,11 +19,12 @@
     border: 1px solid #F1F1F1;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
-    padding: 24px 20px;
+    padding: 22px 20px;
     min-height: 173px;
     margin-bottom: 16px;
     @include tablets {
         padding: 24px 15px;
+        margin-bottom: 13px;
     }
     @include phones {
         margin-bottom: 3px;

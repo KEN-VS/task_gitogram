@@ -3,10 +3,10 @@
     <topline>
       <template #headline>
         <div class="headline__logo">
-        <logo></logo>
+        <logo />
         </div>
         <nav class="headline__menu">
-        <navigation></navigation>
+        <navigation />
         </nav>
       </template>
       <template #content>
@@ -26,11 +26,13 @@
       <li class="content-item">
         <feed>
               <template #card>
-                <h2 class="feeds__title">Vue.js</h2>
                 <div class="feeds__content">
-                  <p>
-                  <b>JavaScript </b> framework for building interactive web applications ⚡
-                  </p></div>
+                   <card-title
+                :title='card1.title'
+                :mainItem='card1.mainItem'
+                :content='card1.content'
+                />
+                </div>
                 <features></features>
               </template>
         </feed>
@@ -38,16 +40,18 @@
       <li class="content-item">
         <feed>
           <template #card>
-            <h2 class="feeds__title">React.js</h2>
             <div class="feeds__content">
-              <p>
-              <b>Open source</b> JavaScript library used for designing user interfaces</p></div>
+                   <card-title
+                :title='card2.title'
+                :mainItem='card2.mainItem'
+                :content='card2.content'
+                />
+                </div>
             <features></features>
           </template>
         </feed>
         </li>
     </ul>
-
   </div>
 </template>
 
@@ -59,6 +63,7 @@ import { userItem } from '../../components/useritem'
 import stories from './data.json'
 import { feed } from '../../components/feed'
 import { features } from '../../components/features'
+import { cardTitle } from '../../components/cardtitle'
 
 export default {
   name: 'feeds',
@@ -68,14 +73,24 @@ export default {
     navigation,
     userItem,
     feed,
-    features
+    features,
+    cardTitle
   },
   data () {
     return {
-      stories
+      stories,
+      card1: {
+        title: 'Vue.js',
+        mainItem: 'JavaScript ',
+        content: 'framework for building interactive web applications ⚡'
+      },
+      card2: {
+        title: 'React.js',
+        mainItem: 'Open source',
+        content: ' JavaScript library used for designing user interfaces'
+      }
     }
   }
-
 }
 </script>
 

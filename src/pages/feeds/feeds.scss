@@ -1,13 +1,16 @@
 @import "../../global.scss";
 .headline__menu {
+    margin-right: 5px;
     @include phones {
         margin-right: 8px;
     }
 }
 
 .headline__logo {
-    width: 100px;
-    height: 21px;
+    @include phones {
+        width: 100px;
+        height: 21px;
+    }
 }
 
 .stories {
@@ -18,40 +21,35 @@
 
 .stories-item {
     flex-shrink: 1;
+    margin-right: 31px;
+    @include tablets {
+        margin-right: 12px;
+    }
+    @include phones {
+        margin-right: 10px;
+    }
 }
 
 .topline {
-    margin-bottom: 23px;
+    background-color: #FAFAFA;
+    margin-bottom: 26px;
     @include tablets {
-        margin-bottom: 31px;
+        margin-bottom: 35px;
     }
     @include phones {
         margin-bottom: 23px;
     }
 }
 
-.feeds__title {
-    margin-bottom: 15px;
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 1.1;
-    @include phones {
-        font-size: 20px;
-    }
-}
-
 .feeds__content {
     margin-bottom: 32px;
-    font-size: 14px;
-    line-height: 1.6;
     @include phones {
-        font-size: 12px;
         margin-bottom: 17px;
     }
 }
 
 .content-item {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     @include tablets {
         margin-bottom: 20px;
     }

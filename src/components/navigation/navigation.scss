@@ -1,7 +1,7 @@
 @import "../../global.scss";
 .headline__list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 25px;
     @include tablets {
         gap: 16px;

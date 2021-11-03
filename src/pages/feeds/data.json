@@ -1,51 +1,51 @@
 [{
         "id": "0",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "joshpic.png",
         "username": "Josh"
     },
     {
         "id": "1",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "andrewpic.png",
         "username": "Andrew"
     },
     {
         "id": "2",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "camillepic.png",
         "username": "Camille"
     },
     {
         "id": "3",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "marsellepic.png",
         "username": "Marselle"
     },
     {
         "id": "4",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "piterpic.png",
         "username": "Piter"
     },
     {
         "id": "5",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "canpic.png",
         "username": "Can"
     },
     {
         "id": "6",
-        "avatar": "../assets/piterpic.png",
+        "avatar": "iloveanimepic.png",
         "username": "Iloveanime"
     },
     {
         "id": "7",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "diselfpic.png",
         "username": "Diself"
     },
     {
         "id": "8",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "gartorpic.png",
         "username": "Gartor"
     },
     {
         "id": "9",
-        "avatar": "https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg",
+        "avatar": "camilrpic.png",
         "username": "Camilr"
     }
 

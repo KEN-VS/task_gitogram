@@ -35,9 +35,9 @@
     height: 15px;
     color: #586069;
     margin-right: 5px;
+    background-color: #FAFAFA;
     &:hover {
         color: #31AE54;
-        ;
     }
     @include phones {
         width: 10px;
@@ -51,9 +51,20 @@
     height: 14px;
     color: #586069;
     margin-right: 5px;
+    background: #FAFAFA;
     @include phones {
         width: 9px;
         height: 11px;
         margin-right: 4px;
     }
+}
+
+.feature__name-fork {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.feature__count-fork {
+    font-size: 12px;
+    font-weight: bold;
 }

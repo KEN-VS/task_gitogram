@@ -1,6 +1,6 @@
 <template>
 <div class="usercard">
-<img class="usercard__img" :src="useravatar" alt="user foto">
+<img class="usercard__img" :src='require(`@/assets/${useravatar}`)' alt="user foto">
 <h3 class="usercard__title">{{username}}</h3>
 </div>
 </template>

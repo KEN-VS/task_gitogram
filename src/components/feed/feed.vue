@@ -40,11 +40,11 @@ export default {
       items,
       shown: false,
       userData1: {
-        useravatar: 'https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg',
+        useravatar: 'piterpic.png',
         username: 'joshua_l'
       },
       userData2: {
-        useravatar: 'https://cdn.pixabay.com/photo/2020/10/26/15/46/autumn-5687698_960_720.jpg',
+        useravatar: 'piterpic.png',
         username: 'Camille'
       }
 

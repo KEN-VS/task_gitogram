@@ -1,0 +1,22 @@
+@import "../../global.scss";
+.card__title {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.1;
+    @include phones {
+        font-size: 20px;
+    }
+}
+
+.card__content {
+    font-size: 14px;
+    line-height: 1.6;
+    @include phones {
+        font-size: 12px;
+    }
+}
+
+.card__content span {
+    font-weight: bold;
+}

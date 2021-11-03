@@ -9,10 +9,10 @@
   </li>
   <li class="features__item">
     <div class="feature-fork"><icon name="fork"/></div>
-    <div class="feature__name">Fork</div>
+    <div class="feature__name-fork">Fork</div>
   </li>
   <li class="features__item feature__value">
-    <div class="feature__count">4</div>
+    <div class="feature__count-fork">4</div>
   </li>
 </ul>
 </template>
