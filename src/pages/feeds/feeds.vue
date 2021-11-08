@@ -11,10 +11,10 @@
       </template>
       <template #content>
         <ul class="stories">
-          <li class="stories-item" v-for="story in stories" :key="story.id">
-          <user-item
-          :avatar="story.avatar"
-          :username="story.username"
+          <li class="stories-item" v-for="item in items" :key="item.id">
+          <story-user-item
+          :avatar="item.owner.avatar_url"
+          :username="item.owner.login"
         />
           </li>
         </ul>
@@ -23,34 +23,25 @@
   </div>
   <div class="main-content">
     <ul class="content-list">
-      <li class="content-item">
-        <feed>
+      <li class="content-item" v-for="item in topItems" :key="item.id">
+        <feed
+        :datetime='item.updated_at'
+        :date='item.updated_at.substring(0,10)'
+        >
               <template #card>
                 <div class="feeds__content">
                    <card-title
-                :title='card1.title'
-                :mainItem='card1.mainItem'
-                :content='card1.content'
+                :title='item.name'
+                :content='item.description'
                 />
                 </div>
-                <features></features>
+                <features
+                :stars="item.stargazers_count"
+                :fork="item.forks"
+                ></features>
               </template>
         </feed>
       </li>
-      <li class="content-item">
-        <feed>
-          <template #card>
-            <div class="feeds__content">
-                   <card-title
-                :title='card2.title'
-                :mainItem='card2.mainItem'
-                :content='card2.content'
-                />
-                </div>
-            <features></features>
-          </template>
-        </feed>
-        </li>
     </ul>
   </div>
 </template>
@@ -59,11 +50,11 @@
 import { topline } from '../../components/topline'
 import { logo } from '../../components/logo'
 import { navigation } from '../../components/navigation'
-import { userItem } from '../../components/useritem'
-import stories from './data.json'
+import { storyUserItem } from '../../components/storyUserItem'
 import { feed } from '../../components/feed'
 import { features } from '../../components/features'
-import { cardTitle } from '../../components/cardtitle'
+import { cardTitle } from '../../components/cardTitle'
+import * as api from '../../api'
 
 export default {
   name: 'feeds',
@@ -71,24 +62,27 @@ export default {
     topline,
     logo,
     navigation,
-    userItem,
+    storyUserItem,
     feed,
     features,
     cardTitle
   },
   data () {
     return {
-      stories,
-      card1: {
-        title: 'Vue.js',
-        mainItem: 'JavaScript ',
-        content: 'framework for building interactive web applications ⚡'
-      },
-      card2: {
-        title: 'React.js',
-        mainItem: 'Open source',
-        content: ' JavaScript library used for designing user interfaces'
-      }
+      items: []
+    }
+  },
+  async created () {
+    try {
+      const { data } = await api.trandings.getTrandings()
+      this.items = data.items
+    } catch (error) {
+      console.log(error)
+    }
+  },
+  computed: {
+    topItems () {
+      return this.items.slice([0], [2])
     }
   }
 }

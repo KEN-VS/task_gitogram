@@ -2,7 +2,6 @@
   <h2 class="card__title">{{title}}</h2>
   <div class="card__content">
     <p>
-    <span>{{mainItem}} </span>
     {{content}}</p>
   </div>
 </template>
@@ -16,10 +15,6 @@ export default {
       type: String,
       required: true
     },
-    mainItem: {
-      type: String,
-      required: true
-    },
     content: {
       type: String,
       required: true
@@ -28,4 +23,4 @@ export default {
 }
 </script>
 
-<style src="./card-title.scss" lang="scss" scoped></style>
+<style src="./cardTitle.scss" lang="scss" scoped></style>

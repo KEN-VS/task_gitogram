@@ -1,7 +1,7 @@
 <template>
 <button class="c-user-btn">
   <div class="avatar">
-  <img :src='require(`@/assets/${avatar}`)' alt="avatar" class="avatar__img">
+  <img :src='avatar ' alt="avatar" class="avatar__img">
   </div>
   <div class="username">{{username}}</div>
 </button>
@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: 'storyUserItem',
   props: {
     avatar: {
       type: String,
@@ -22,4 +23,4 @@ export default {
 }
 </script>
 
-<style src="./user-item.scss" lang="scss" scoped></style>
+<style src="./storyUserItem.scss" lang="scss" scoped></style>

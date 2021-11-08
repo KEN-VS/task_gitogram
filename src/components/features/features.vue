@@ -1,20 +1,10 @@
 <template>
-<ul class="features__list">
-  <li class="features__item">
-    <div class="feature-star"><icon name="star"/></div>
-    <div class="feature__name">Star</div>
-  </li>
-  <li class="features__item feature__value">
-    <div class="feature__count">156k</div>
-  </li>
-  <li class="features__item">
-    <div class="feature-fork"><icon name="fork"/></div>
-    <div class="feature__name-fork">Fork</div>
-  </li>
-  <li class="features__item feature__value">
-    <div class="feature__count-fork">4</div>
-  </li>
-</ul>
+<div class="features__list">
+  <div class="feature__star"><icon name="star"/> <span>Star</span></div>
+  <div class="feature__count-star">{{stars}}</div>
+  <div class="feature__fork"><icon name="fork"/> <span>Fork</span></div>
+  <div class="feature__count-fork">{{fork}}</div>
+</div>
 </template>
 
 <script>
@@ -23,6 +13,16 @@ export default {
   name: 'features',
   components: {
     icon
+  },
+  props: {
+    stars: {
+      type: Number,
+      required: true
+    },
+    fork: {
+      type: Number,
+      required: true
+    }
   }
 }
 </script>
