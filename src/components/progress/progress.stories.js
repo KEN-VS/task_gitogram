@@ -1,23 +1,23 @@
 import progress from './progress.vue'
 
 export default {
-  title: 'progress',
-  component: { progress },
-  argTypes: {
-    onFinish: {
-      action: 'onFinish',
-      description: 'finish'
+    title: 'progress',
+    component: { progress },
+    argTypes: {
+        onFinish: {
+            action: 'onFinish',
+            description: 'finish'
 
+        }
     }
-  }
 }
 
 const template = (args) => ({
-  components: { progress },
-  data () {
-    return { args }
-  },
-  template: '<progress @onFinish="args.onFinish" />'
+    components: { xProgress: progress },
+    data() {
+        return { args }
+    },
+    template: '<x-progress @onFinish="args.onFinish" />'
 })
 
 export const Default = template.bind({ template })

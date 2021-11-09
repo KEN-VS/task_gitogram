@@ -1,5 +1,22 @@
 @import "../../global.scss";
-.c-button {
+.с-button {
+    &::after {
+        color: green;
+        content: attr(hover-text);
+        font-size: 0;
+    }
+    &:hover {
+        .btn-text {
+            font-size: 0;
+        }
+        &::after {
+            font-size: inherit;
+        }
+    }
+}
+
+
+/*.c-button {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -19,4 +36,4 @@
 
 .theme-green {
     background: #31AE54;
-}
+}*/

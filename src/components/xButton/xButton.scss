@@ -9,14 +9,19 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    background: #31AE54;
+    &::after {
+        color: inherit;
+        content: attr(data-hover-text);
+        display: none;
+    }
     &:hover {
         background: #9E9E9E;
         .btn-text {
-            content: attr(data-hover-text);
+            display: none;
+        }
+        &::after {
+            display: block;
         }
     }
-}
-
-.theme-green {
-    background: #31AE54;
 }

@@ -27,6 +27,8 @@
         <feed
         :datetime='item.updated_at'
         :date='item.updated_at.substring(0,10)'
+        :useravatar='item.owner.avatar_url'
+        :username='item.owner.login'
         >
               <template #card>
                 <div class="feeds__content">
