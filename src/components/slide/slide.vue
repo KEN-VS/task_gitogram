@@ -24,7 +24,7 @@
 <script>
 import { progress } from '../../components/progress'
 import { xButton } from '../../components/xButton'
-import { userCard } from '../../components/userCard'
+import { userCard } from '../../components/usercard'
 
 export default {
   name: 'slide',
@@ -35,6 +35,14 @@ export default {
   },
   props: {
     slidepic: {
+      type: String,
+      required: true
+    },
+    useravatar: {
+      type: String,
+      required: true
+    },
+    username: {
       type: String,
       required: true
     }

@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { userCard } from '../../components/userCard'
+import { userCard } from '../../components/usercard'
 import { toggler } from '../../components/toggler'
 import { comment } from '../../components/comment'
 import statements from './data.json'
@@ -49,8 +49,15 @@ export default {
     datetime: {
       type: String,
       required: true
+    },
+    useravatar: {
+      type: String,
+      required: true
+    },
+    username: {
+      type: String,
+      required: true
     }
-
   },
   methods: {
     toggle (isOpened) {

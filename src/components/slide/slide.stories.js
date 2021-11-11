@@ -1,5 +1,5 @@
 import slide from './slide.vue'
-import userCard from '../userCard/userCard.vue'
+import userCard from '../usercard/userCard.vue'
 import progress from '../progress/progress.vue'
 import xButton from '../xButton/xButton.vue'
 
@@ -28,7 +28,7 @@ const template = (args, { argTypes }) => ({
     data: () => {
         return { args }
     },
-    template: `<slide :slidepic="args.image" :useravatar="args.avatar" :username="args.name" />`
+    template: '<slide :slidepic="args.image" :useravatar="args.avatar" :username="args.name" />'
 })
 
 export const Default = template.bind({ template })

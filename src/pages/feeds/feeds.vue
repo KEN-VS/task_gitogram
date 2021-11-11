@@ -55,7 +55,7 @@ import { navigation } from '../../components/navigation'
 import { storyUserItem } from '../../components/storyUserItem'
 import { feed } from '../../components/feed'
 import { features } from '../../components/features'
-import { cardTitle } from '../../components/cardTitle'
+import { cardTitle } from '../../components/cardtitle'
 import * as api from '../../api'
 
 export default {
